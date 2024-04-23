@@ -1,230 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/452d5e3228.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/452d5e3228.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/logo-port.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+          <img src="images/logo-port.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>A Fullstack Developer</p>
-            <h1>Hi, I'm <span>Syphrose</span><br>Wabulwenyi From Kenya.</h1>   
-
+          <p>A Fullstack Developer</p>
+          <h1>Hi, I am <span>Syphrose</span><br />Wabulwenyi From Kenya.</h1>
         </div>
+      </div>
     </div>
-</div>
 
-<!-------------------about--------------->
+    <!-------------------about--------------->
 
-<div id="about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/Snapchat-297824722.jpg">
+          <div class="about-col-1">
+            <img src="images/DSC_0802.psd mashh.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a dedicated and dependable full stack developer proficient
+              programming languages, I am committed to surpassing expectations
+              to support my team and satisfy customers. With a focus on ensuring
+              seamless interaction for website visitors, I prioritize usability
+              and accessibility in every project. My strong reliability and
+              creativity enable me to deliver top-notch solutions that meet and
+              exceed client needs.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus suscipit quasi
-                vitae totam ullam pariatur sit. Porro temporibus est consequatur eos quae. Quasi 
-                dicta expedita laboriosam nemo cum, minus eligendi?</p>
-                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                     </div>
-                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing App/Web interfaces</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                        </ul>
-                     </div>
-                     <div class="tab-contents active-tab" id="experience">
-                        <ul>
-                            <li><span>2024</span><br>Business Management at Alison</li>
-                            <li><span>2023-2024</span><br>Fullstack Development at Holberton School</li>
-                            <li><span>2022</span><br>Front-End Development at Moringa School</li>
-                            <li><span>2020</span><br>Computer Packages at NewTech Computer College</li>
-                        </ul>
-                     </div>
-                     <div class="tab-contents active-tab" id="education">
-                        <ul>
-                            <li><span>2024</span><br>Certificate from ALX-Africa.</li>
-                            <li><span>2022</span><br>Front-End Development training at Moringa School.</li>
-                            <li><span>2020</span><br>Certificate from NewTech College.</li>
-                        </ul>
-                     </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing App/Web interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+              </ul>
             </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li><span>2024</span><br />Business Management at Alison</li>
+                <li>
+                  <span>2023-2024</span><br />Fullstack Development at Holberton
+                  School
+                </li>
+                <li>
+                  <span>2022</span><br />Front-End Development at Moringa School
+                </li>
+                <li>
+                  <span>2020</span><br />Computer Packages at NewTech Computer
+                  College
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li><span>2024</span><br />Certificate from ALX-Africa.</li>
+                <li>
+                  <span>2022</span><br />Front-End Development training at
+                  Moringa School.
+                </li>
+                <li>
+                  <span>2020</span><br />Certificate from NewTech College.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!--------------services---------->
+    <!--------------services---------->
 
-<div id="services">
-    <div class="container">
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam expedita necessitatibus
-                     repellat deleniti placeat similique dolores illo minus doloribus, illum repellendus cum aliquid 
-                     laboriosam fugit laudantium! Fugit, quae magni?</p>
-                     <a href="#">Learn more</a>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <div class="card">
+              <input id="ch" type="checkbox" />
+              <h2>Web Design</h2>
+              <p>
+                I am responsible for creating the look, layout, and features of
+                a website. I work closely with clients or project managers to
+                understand the goals and requirements of the website and then
+                use my creativity and technical skills to design a site that
+                meets those needs. Some of my roles include,..
+              </p>
+              <div class="content">
+                <p>
+                  Conceptualizing and Designing: Creating the overall look and
+                  feel of the website, including graphics, colors, and fonts.
+                  This may involve designing logos, images, and other visual
+                  elements. <br />
+                  Layout and Structure: Organizing the content of the website
+                  and designing the layout of each page to ensure a logical flow
+                  and easy navigation. <br />Responsive Design: Designing
+                  websites that are optimized for various devices and screen
+                  sizes, including desktops, laptops, tablets, and smartphones.
+                  <br />
+                  Collaboration: Working closely with developers, content
+                  creators, and other team members to ensure that the website
+                  meets the needs of the client or project. <br />
+                  Testing and Troubleshooting: Conducting testing to identify
+                  and fix any issues with the website's design, layout, or
+                  functionality. <br />
+                  Keeping Up with Trends: Staying updated on current design
+                  trends, technologies, and best practices to ensure that
+                  websites are visually appealing and functional.
+                </p>
+                <label for="ch">Show less</label>
+              </div>
+              <label for="ch">Read more</label>
             </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam expedita necessitatibus
-                     repellat deleniti placeat similique dolores illo minus doloribus, illum repellendus cum aliquid 
-                     laboriosam fugit laudantium! Fugit, quae magni?</p>
-                     <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <div class="card">
+              <input id="ch" type="checkbox" />
+              <h2>UI/UX Design</h2>
+              <p>
+                Responsible for creating intuitive, user-friendly designs that
+                enhance the overall user experience of digital products. I play
+                a crucial role in ensuring that products are not only visually
+                appealing but also functional and easy to use. Some of the roles
+                I do are,....
+              </p>
+              <div class="content">
+                <p>
+                  User Interface (UI) Design: As a UI designer I am responsible
+                  for the visual elements of a product. This includes creating
+                  the look and feel of the product, such as layout, colors,
+                  typography, and interactive elements. <br />
+                  User Experience (UX) Design: I focus on the overall experience
+                  of the user when interacting with the product. This involves
+                  understanding user needs, conducting user research, creating
+                  user personas, and designing user flows and wireframes. <br />
+                  Prototyping and Testing: As a UI/UX designer I create
+                  prototypes of the product to test usability and gather
+                  feedback from users. I use this feedback to iterate on the
+                  design and improve the overall user experience. <br />
+                  Collaboration: I work closely with product managers,
+                  developers, and other stakeholders to ensure that the design
+                  meets the requirements and goals of the project. <br />
+                  Accessibility: I will also consider accessibility principles
+                  to ensure that the product can be used by people with
+                  disabilities. <br />
+                  Stay Updated: I have to stay updated with the latest design
+                  trends, tools, and technologies to continuously improve my
+                  designs and stay competitive in the field.
+                </p>
+                <label for="ch">Show less</label>
+              </div>
+              <label for="ch">Read more</label>
             </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam expedita necessitatibus
-                     repellat deleniti placeat similique dolores illo minus doloribus, illum repellendus cum aliquid 
-                     laboriosam fugit laudantium! Fugit, quae magni?</p>
-                     <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <div class="card">
+              <input id="ch" type="checkbox" />
+              <h2>App Design</h2>
+              <p>
+                As an app designer, I get involved in creating the visual and
+                interactive elements of a mobile application. For more info,...
+              </p>
+              <div class="content">
+                <p>
+                  I can specifically focus on designing mobile applications
+                  (apps) for smartphones and tablets. Like a UI/UX designer,
+                  <br />
+                  an app designer is responsible for creating the visual and
+                  interactive elements of an app, ensuring that it is visually
+                  appealing, easy to use, and provides a positive user
+                  experience. App designers <br />
+                  may also need to consider platform-specific design guidelines
+                  (e.g., iOS Human Interface Guidelines, Material Design) when
+                  designing apps for different mobile operating systems.
+                </p>
+                <label for="ch">Show less</label>
+              </div>
+              <label for="ch">Read more</label>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!---------------portfolio---------------->
+    <!---------------portfolio---------------->
 
-<div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/logo.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, enim officiis atque distinctio 
-                        cumque dicta rerum quidem nihil ratione quo, explicabo ullam numquam obcaecati? Quia dolor mollitia.</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/Screenshot (81).png" alt="" />
+            <div class="layer">
+              <h3>Furniture App</h3>
+              <p>
+                Noble Nest began as a vision to curate a collection of
+                furnishings that transcends the ordinary, offering a touch of
+                opulence to every living space.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
-            <div class="work">
-                <img src="images/logo.png" alt="">
-                <div class="layer">
-                    <h3>Research profile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed quibusdam quod, non recusandae ullam
-                         eligendi aperiam cum? Possimus aut quos blanditiis, voluptate iusto debitis repudiandae culpa.</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (80).png" alt="" />
+            <div class="layer">
+              <h3>Research profile</h3>
+              <p>
+                ELPI is a premier organization dedicated to inspiring leaders
+                across electoral, government, non-governmental organizations,
+                and corporate sectors in Africa to embrace and practice
+                excellence and accountability.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
-            <div class="work">
-                <img src="images/logo.png" alt="">
-                <div class="layer">
-                    <h3>Vyakula website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem praesentium neque distinctio dicta autem, 
-                        nihil reiciendis modi dolor dolores, enim quibusdam quas totam voluptates nostrum dolore accusantium.</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>    
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (79).png" alt="" />
+            <div class="layer">
+              <h3>Vyakula website</h3>
+              <p>
+                Vyakula is a food delivery website that provides users with a
+                wide variety of local cuisines to select from. Its main aimis to
+                provide rich tapestry of local cuisines, we aimed to celebrate
+                diversity through our menu.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
+      </div>
     </div>
-</div>
 
-<!--------------contact------------>
+    <!--------------contact------------>
 
-<div id="contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Talk To Me</h1>
-                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> 0712345678</p>
-                <div class="social-icons">
-                    <a href="https://web.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://twitter.com/_syphrose"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/swabulwenyi/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/syphrose-wabulwenyi-475486244/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Talk To Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> email @ swabulwenyi@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> 0741456861</p>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://twitter.com/_syphrose"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/swabulwenyi/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/syphrose-wabulwenyi-475486244/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a
+              href="images/SYPHROSE WABULWENYI RESUME.docx.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
+      </div>
+      <div class="copyright">
         <p>Copyright @ Syphrose.</p>
+      </div>
     </div>
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+      }
+    </script>
 
-<script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-    var sidemenu = document.getElementById("sidemenu")
-    function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px"
-    }
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
 
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzoMGzz6TM--QAeKOEJt6HUGCdrTvBijiK4Mft0SjS9Tah0x3hj0lpQPb8BssCPPtbn/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message submitted successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzoMGzz6TM--QAeKOEJt6HUGCdrTvBijiK4Mft0SjS9Tah0x3hj0lpQPb8BssCPPtbn/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message submitted successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
